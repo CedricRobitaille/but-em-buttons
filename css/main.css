@@ -7,21 +7,73 @@ body {
   background-repeat: repeat;
 }
 
+section {
+  position: relative;
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 30%;
+  margin: auto;
+}
+
 h1 {
   color: #fff;
-  text-shadow: rgba(255, 255, 255, 0.7);
+  filter: drop-shadow(2px 2px 3px rgba(255, 255, 255, .7));
 }
 
 h2 {
   color: #fff;
-  text-shadow: rgba(180, 255, 244, .2);
+  text-shadow: 2px 2px 3px rgba(255, 255, 255, .7);
 }
 
 a {
-  border: 3px solid rgba(180, 255, 244, .2);
+  transition: all .2s linear;
+  border: 3px solid;
+  border-color: #90ccc3;
+  border-radius: 8px;
+  top: 1em;
+}
+
+a:active {
+  transform: translateY(.9em);
+  top: 2em;
+}
+
+.btn {
+  border: 3px solid;
+  border-color: #90ccc3;
   border-radius: 8px;
 }
 
+.btn:active {
+  transform: translateY(.9em);
+}
+
+.btn-ghost {
+  transition: all .2s linear;
+  border: 3px solid;
+  border-color: #90ccc3;
+  border-radius: 8px;
+}
+
+.btn-ghost:hover {
+  background-color: rgba(180, 255, 244, .2);
+  border-color: #90ccc3;
+}
+
+.btn-ghost:active {
+  transform: translateY(.9em);
+}
+
+.btn-ghost:focus {
+  transform: translateY(.25em);
+}
+
 p {
-  color: rgba(180, 255, 244);
+  color: #b4fff4;
 }
